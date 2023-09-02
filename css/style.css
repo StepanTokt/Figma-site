@@ -1,0 +1,230 @@
+:root{
+    --gray__background: #EEEFF1;
+    --accent__color: #34547A;
+    --silver__color: #EEEFF1;
+    --white__color: #FFFFFF;
+    --white__background: #FCFDFD;
+    --black__color: #000;
+    --p__color:#727272;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.text-h2{
+    color: var(--black__color);
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.text-p{
+    color: var(--p__color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.25px;
+}
+
+.text-h3{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.header{
+    padding-top: 60px;
+    padding-left: 16px;
+    padding-right: 21px;
+    padding-bottom: 146px;
+    background-color: var(--gray__background);
+}
+.logo{
+    width: 96px;
+    height: 60px;
+    margin-left: 16px;
+}
+
+.header__flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+.header__nav-ul{
+    list-style: none;
+    margin-right: 29px;
+    
+}
+.header__nav-ul li{
+    display: inline;
+    list-style: none;
+    margin-right: 42px;
+
+}
+.header__nav-ul li:last-child{
+    margin-right: 0px;
+}
+.header__nav-ul li a{
+    text-decoration: none;
+    color: var(--black__color);
+    text-transform: uppercase;
+}
+.header__nav-ul li a:hover{
+    text-decoration: none;
+    color: var(--accent__color);
+    text-transform: uppercase;
+}
+.header__pc{
+    max-width: 357px;
+    height: 233.7px;
+}
+.header__grid{
+    padding-top: 140px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+}
+.header__body-h1{
+    color: #000;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 78.75px;
+    margin-bottom: 35px;
+}
+
+.header__body-p{
+    color: #727272;
+    max-width: 540px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.25px;
+    margin-bottom: 35px;
+}
+
+.header__body-button{
+    background-color: var(--accent__color);
+    color: var(--white__color);
+    max-width: 225px;
+    padding: 25px 41px;
+    
+    border: none;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.25px;
+    letter-spacing: 1.6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.header__body-button:hover{
+    background-color: #F7654A;
+}
+
+@media screen and (max-width: 1280px) {
+    .header__grid{
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+    .header__nav-ul li{
+        margin-right: 20px;
+    
+    }
+    .header__nav-ul li:last-child{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__nav-ul{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.about__grid {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    padding-top: 120px;
+    padding-bottom: 110px;
+    max-width: 540px;
+    margin: 0 auto;
+}
+.about__h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.about__p {
+
+    text-align: center;
+}
+
+.numbers {
+    background-color: var(--accent__color);
+}
+.numbers__grid {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-items: center;
+    gap:40px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.numbers__grid-flexbox {
+    display: flex;
+}
+.numbers__grid-flexbox img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.numbers__text-p {
+    color:var(--white__color)
+}
+
+@media screen and (max-width: 1280px) {
+    .numbers__grid {
+        grid-template-columns: repeat(3,1fr);
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .numbers__grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
