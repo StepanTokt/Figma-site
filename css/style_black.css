@@ -589,14 +589,15 @@ body {
     height: 50px;
 }
 .questions__myform-message {
-    padding-top: 17px;
-    padding-left: 20px;
-    border: none;
-    width: 540px;
-    height: 175px;
+  padding-top: 17px;
+  padding-left: 20px;
+  border: none;
+  width: 540px;
+  height: 175px;
+  resize: none;
 }
 .questions__myform-message::placeholder{
-    transform: translateY(-70px);
+  font-size: 14px;
 }
 .questions__myform-submit {
     width: 190px;
