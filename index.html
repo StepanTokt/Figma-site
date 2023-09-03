@@ -6,17 +6,47 @@
     <title>Self_made</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" id="theme">
 </head>
 <body>
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <a href="#user"><img class="circle" src="img/WNq.gif"></a>
+                <a href="#name"><span class="black-text name">Stepan Tokt</span></a>
+                <a href="#email"><span class="black-text email">stepantokt@mail.ru</span></a>
+            </div>
+        </li>
+        <li><div class="divider"></div></li>
+        <li><a class="waves-effect waves-purple" href="#main"><i class="material-icons">home</i>Главная</a></li>
+        <li><a class="waves-effect waves-orange" href="#about"><i class="material-icons">person</i>Об авторе</a></li>
+        <li><a class="waves-effect waves-red" href="#about"><i class="material-icons">dashboard</i>Работы</a></li>
+        <li><a class="waves-effect waves-green" href="#projects"><i class="material-icons">filter_frames</i>Портфолио</a></li>
+        <li><a class="waves-effect waves-yellow" href="#contacts"><i class="material-icons">contacts</i>Контакты</a></li>
+        <li><a class="waves-effect waves-orange switcher white" href="#" >Dark theme</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="waves-effect sidenav-close waves-teal" href="#!"><i class="material-icons">close</i>Close</a></li>
+      </ul>
+      
+    <a href="" name="main"></a>
+
     <header class="header">
         <div class="container">
             <div class="header__flexbox">
+               
+                
+                <a data-target="slide-out" class="burger sidenav-trigger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </a>
                 <img class="logo"src="img/logo.png" alt="">
                 <div class="header__nav">
                     <ul class="header__nav-ul">
-                        <li><a href="">Главная</a></li>
+                        <li><a href="#main">Главная</a></li>
                         <li><a href="#about">Об авторе</a></li>
                         <li><a href="#about">Работы</a></li>
                         <li><a href="#projects">Портфолио</a></li>
@@ -144,20 +174,20 @@
     <a href="" name="projects"></a>
     <section class="projects">
         <div class="projects__grid">
-            <img src="img/p1.png" alt="">
+            <img class="portfolio__img materialboxed" src="img/p1.png" alt="">
 
             <div>
-                <a class="eye" href="">
-                    <img class="projects__effect" src="img/p2_1x.png" alt="">
+                <a class="eye">
+                    <img class="projects__effect portfolio__img materialboxed" src="img/p2_1x.png" alt="">
                 </a> 
             </div>
 
-            <img src="img/p1.png" alt="">
-            <img src="img/p2_1x.png" alt="">
-            <img src="img/p2_1x.png" alt="">
-            <img src="img/p1.png" alt="">
-            <img src="img/p2_1x.png" alt="">
-            <img src="img/p1.png" alt="">
+            <img class="portfolio__img materialboxed" src="img/p1.png" alt="">
+            <img class="portfolio__img materialboxed" src="img/p2_1x.png" alt="">
+            <img class="portfolio__img materialboxed" src="img/p2_1x.png" alt="">
+            <img class="portfolio__img materialboxed" src="img/p1.png" alt="">
+            <img class="portfolio__img materialboxed" src="img/p2_1x.png" alt="">
+            <img class="portfolio__img materialboxed" src="img/p1.png" alt="">
         </div>
     </section>
 
@@ -207,22 +237,7 @@
         </div>
     </footer>
 
-    <script>
-       let switcher = document.querySelector('.switcher')
-       switcher.addEventListener('click', function(){
-        if(switcher.classList.contains('white')){
-            switcher.classList.remove('white')
-            switcher.classList.add('black')
-            switcher.textContent='White theme'
-            theme.setAttribute('href', 'css/style_black.css')
-        }
-        else{
-            switcher.classList.remove('black')
-            switcher.classList.add('white')
-            switcher.textContent='Dark theme'
-            theme.setAttribute('href', 'css/style.css')
-        }
-       })
-    </script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
