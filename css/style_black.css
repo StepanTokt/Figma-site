@@ -432,10 +432,6 @@ body {
         max-width: 300px;
         height: 150px;
     }
-    .video__p{
-        margin-right: 10px;
-        margin-left: 10px;
-    }
 }
 
 .projects{
@@ -618,10 +614,6 @@ body {
     }
     .questions__myform-message {
         width: 300px;
-    }
-    .questions__p {
-        margin-right: 10px;
-        margin-left: 10px;
     }
 }
 

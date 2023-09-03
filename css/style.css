@@ -425,10 +425,6 @@ body {
         max-width: 300px;
         height: 150px;
     }
-    .video__p{
-        margin-right: 10px;
-        margin-left: 10px;
-    }
 }
 
 
@@ -592,6 +588,7 @@ body {
     }
     .questions__myform-name{
         width: 540px;
+        margin: 0 auto;
         margin-bottom: 20px;
     }
     .questions__myform-mail{
@@ -610,10 +607,7 @@ body {
     .questions__myform-message {
         width: 300px;
     }
-    .questions__p {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
+ 
 }
 
 
