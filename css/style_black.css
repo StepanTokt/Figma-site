@@ -353,21 +353,21 @@ body {
     position: absolute;
     width: 70%;
     height: 4px;
-    background-color: var(--accent__color);
+    background-color: #F7654A;
 }
 
 .progressbar__80 {
     position: absolute;
     width: 80%;
     height: 4px;
-    background-color: var(--accent__color);
+    background-color: #F7654A;
 }
 
 .progressbar__60 {
     position: absolute;
     width: 60%;
     height: 4px;
-    background-color: var(--accent__color);
+    background-color: #F7654A;
 }
 
 .skills__flexbox-item-right {
