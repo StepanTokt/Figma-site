@@ -223,6 +223,25 @@ body {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+    .header__pc {
+        max-width: 300px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header__flexbox {
+       flex-direction: column;
+    }
+    .header__nav-ul {
+       text-align: center;
+    }
+    .header__nav-ul li{
+        margin-right: 0;
+    }
+    .logo {
+        margin: 0 auto;
+    }
 }
 
 .about__grid {
@@ -286,7 +305,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .numbers__grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     .about__p{
         margin-right: 10px;
@@ -377,7 +396,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .my__photo {
-        max-width: 350px;
+        max-width: 250px;
     }
 
     .progressbar__full {
@@ -429,7 +448,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .video__myvideo {
-        max-width: 300px;
+        max-width: 250px;
         height: 150px;
     }
 }
@@ -597,6 +616,7 @@ body {
     }
     .questions__myform-name{
         width: 540px;
+        margin: 0 auto;
         margin-bottom: 20px;
     }
     .questions__myform-mail{
@@ -607,14 +627,15 @@ body {
 
 @media screen and (max-width: 768px) {
     .questions__myform-name{
-        width: 300px;
+        width: 250px;
     }
     .questions__myform-mail{
-        width: 300px;
+        width: 250px;
     }
     .questions__myform-message {
-        width: 300px;
+        width: 250px;
     }
+ 
 }
 
 
@@ -652,4 +673,27 @@ body {
 }
 .footer__flexbox-right-item a:last-child{
     margin-right: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    .footer__flexbox-left-item {
+        margin-left: 15px;
+     }
+     .footer__flexbox-right-item {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__flexbox {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__flexbox-left-item {
+        margin-bottom: 10px;
+     }
+     .footer__flexbox-right-item {
+        margin: 0 auto;
+        
+    }
 }
