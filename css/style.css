@@ -105,11 +105,11 @@ body {
     border: none;
 } */
 
-.logo {
+/* .logo {
     width: 96px;
     height: 60px;
     margin-left: 16px;
-}
+} */
 
 .header__flexbox {
     display: flex;
@@ -1265,3 +1265,17 @@ ul:not(.browser-default) {
 }
 
 
+
+.logo{
+  margin-left: 16px;
+  color: #34547A;
+text-align: center;
+font-family: 'Revalia';
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 96px;
+height: 60px;
+flex-shrink: 0;
+}

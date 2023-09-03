@@ -15,12 +15,19 @@ for (let switcher of switchers) {
             switcher.classList.add('black');
             switcher.textContent = 'White theme';
             theme.setAttribute('href', 'css/style_black.css');
+
+            var slidenav = document.querySelectorAll('.sidenav');
+            slidenav.classList.add('black__theme-sidenav')
         } else {
             switcher.classList.remove('black');
             switcher.classList.add('white');
             switcher.textContent = 'Dark theme';
             theme.setAttribute('href', 'css/style.css');
+
+            var slidenav = document.querySelectorAll('.sidenav');
+            slidenav.classList.remove('black__theme-sidenav')
         }
+
     });
 }
 
