@@ -7,20 +7,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 let switchers = document.querySelectorAll('.switcher');
-
+if(localStorage.getItem('theme') == 'white'){
+    theme.setAttribute('href', 'css/style.css');
+}
+else if(localStorage.getItem('theme') == 'black'){
+    theme.setAttribute('href', 'css/style_black.css');
+}
+else{
+    localStorage.setItem('theme', 'white')
+    theme.setAttribute('href', 'css/style.css');
+}
 for (let switcher of switchers) {
     switcher.addEventListener('click', function() {
-        if (switcher.classList.contains('white')) {
-            switcher.classList.remove('white');
-            switcher.classList.add('black');
+        if (localStorage.getItem('theme') == 'white') {
+            localStorage.setItem('theme', 'black')
             switcher.textContent = 'White theme';
             theme.setAttribute('href', 'css/style_black.css');
 
             var slidenav = document.querySelectorAll('.sidenav');
             slidenav.classList.add('black__theme-sidenav')
         } else {
-            switcher.classList.remove('black');
-            switcher.classList.add('white');
+            localStorage.setItem('theme', 'white')
             switcher.textContent = 'Dark theme';
             theme.setAttribute('href', 'css/style.css');
 
@@ -30,6 +37,32 @@ for (let switcher of switchers) {
 
     });
 }
+
+
+
+
+// for (let switcher of switchers) {
+//     switcher.addEventListener('click', function() {
+//         if (switcher.classList.contains('white')) {
+//             switcher.classList.remove('white');
+//             switcher.classList.add('black');
+//             switcher.textContent = 'White theme';
+//             theme.setAttribute('href', 'css/style_black.css');
+
+//             var slidenav = document.querySelectorAll('.sidenav');
+//             slidenav.classList.add('black__theme-sidenav')
+//         } else {
+//             switcher.classList.remove('black');
+//             switcher.classList.add('white');
+//             switcher.textContent = 'Dark theme';
+//             theme.setAttribute('href', 'css/style.css');
+
+//             var slidenav = document.querySelectorAll('.sidenav');
+//             slidenav.classList.remove('black__theme-sidenav')
+//         }
+
+//     });
+// }
 
 
 
